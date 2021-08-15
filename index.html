@@ -1,9 +1,125 @@
 <!DOCTYPE html>
+<link href="../UX_UI_HW_20/css/style.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
 <html>
 <head>
     <title>UX/UI Homework 20</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
 </head>
 <body>
-    
+    <!--Nav Component-->
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Problem Statement</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Iterations</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Prototype</a>
+        </li>
+      </ul>
+
+      <!--Overview Jumbotron Component-->
+      <div class="jumbotron">
+        <h1 class="display-4">BudgIt</h1>
+        <p class="lead">A comprehensive money management app for young adults.</p>
+        <hr class="my-4">
+        <p>Many young adults struggle with taking control of their finances. Despite many recently finishing school, these individuals are not equipped with the right tools for the financial responsibilities that are expected of them, which causes them stress. <strong>BudgIt</strong> is an app that connects all aspects of an individual’s finances into one intuitive interface. In addition, it creates a judgment-free space for adults to develop their financial literacy.        </p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+      </div>
+
+    <h2>Research</h2>
+    <p>
+        We focused our research on three objectives: 
+        <ul>
+            <li>Understand the current level of financial education of the average young adult</li>
+            <li>Discover the tools and methods that young adults currently use to manage their finances</li>
+            <li>Learn what is most frustrating to young adults about managining their own finances</li>
+        </ul>
+    </p>
+    <!--Research Accordion Component-->
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Competitor Analysis
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <img src="../UX_UI_HW_20/images/competitoranalysis.png">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Feature Prioritization
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <img src="../UX_UI_HW_20/images/featureprioritization.png">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Storyboard
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <img src="../UX_UI_HW_20/images/storyboard.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!--Problem Statement Jumbotron Component-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+        <h1 class="display-4">Problem Statement</h1>
+        <p class="lead">The shortage of concise information on money management in the education system has caused young adults to lack the confidence or know-how to begin building better financial health for themselves. We have observed that young adults don’t have the skills for financial literacy, which is causing poor financial health and planning for long-term goals. </p>
+        </div>
+    </div>
+
+    <h2>Iterations</h2>
+    <!--Iterations Card Component-->
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+
+    <!--Prototype Gif-->
+    <h2>Prototype</h2>
+    <img src="../UX_UI_HW_20/images/Budgit Walkthrough.gif">
 </body>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
 </html>
